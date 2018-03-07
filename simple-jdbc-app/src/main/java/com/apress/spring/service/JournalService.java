@@ -24,10 +24,10 @@ public class JournalService {
 		jdbcTemplate.execute("DROP TABLE JOURNAL IF EXISTS");
 		jdbcTemplate.execute("CREATE TABLE JOURNAL(id SERIAL, title VARCHAR(255), summary VARCHAR(255), created TIMESTAMP)");
 		log.info("> JournalService 데이터 생성...");
-		jdbcTemplate.execute("INSERT INTO JOURNAL(title,summary,created) VALUES('Get to know Spring Boot','Today I will learn Spring Boot','2016-01-01 00:00:00.00')");
-		jdbcTemplate.execute("INSERT INTO JOURNAL(title,summary,created) VALUES('Simple Spring Boot Project','I will do my first Spring Boot project','2016-01-02 00:00:00.00')");
-		jdbcTemplate.execute("INSERT INTO JOURNAL(title,summary,created) VALUES('Spring Boot Reading','Read more about Spring Boot','2016-02-01 00:00:00.00')");
-		jdbcTemplate.execute("INSERT INTO JOURNAL(title,summary,created) VALUES('Spring Boot in the Cloud','Learn Spring Boot using Cloud Foundry','2016-01-01 00:00:00.00')");
+		jdbcTemplate.execute("INSERT INTO JOURNAL(title,summary,created) VALUES('스프링 부트 입문','노늘부터 스프링 부트를 배웠다.','2016-01-01 00:00:00.00')");
+		jdbcTemplate.execute("INSERT INTO JOURNAL(title,summary,created) VALUES('간단한 스프링부트 프로젝트','스프링 부트 프로젝트를 처음 만들어보았다.','2016-01-02 00:00:00.00')");
+		jdbcTemplate.execute("INSERT INTO JOURNAL(title,summary,created) VALUES('스프링 부트 해부','스프링 부트 를 자세히 살펴보았다.','2016-02-01 00:00:00.00')");
+		jdbcTemplate.execute("INSERT INTO JOURNAL(title,summary,created) VALUES('스르링 부트 클라우드','클라우드 파운드리를 응용한 스프링 부트를 공부했다.','2016-01-01 00:00:00.00')");
 		log.info("> 완료.");
 	}
 	
